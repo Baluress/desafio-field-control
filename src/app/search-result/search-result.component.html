@@ -1,0 +1,29 @@
+
+  <div class="container">
+    <ul class="list" *ngIf="listItems?.length>0; else emptyList">
+      <li class="list-items" *ngFor="let item of listItems | paginate: { itemsPerPage: 10, currentPage: p }">
+        <div class="repo-header">
+          <img class="repo-header__icon" src="../../assets/images/icons8-repository-16.png" alt="Ícone de repositório">
+          <a class="repo-header__link" target="_blank" href={{item.html_url}}>{{item.full_name}}</a>
+        </div>
+          <p class="list-items__description">{{item.description}}</p>
+          <p class="list-items__topics"><span>Tópicos: </span>{{item.topics}}</p>
+        <div class="span-list">
+          <span><img src="..//../assets/images/icons8-christmas-star-14.png" alt="Ícone de estrela"></span>
+          <span>{{item.stargazers_count}}</span>
+          <span>{{item.language}}</span>
+          <span>{{item.updated_at | date: 'short'}}</span>
+        </div>
+      </li>
+  </ul>
+
+  <button class="button" id="button-results" (click)="getListItems()">Mostrar</button>
+</div>
+
+  <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
+
+  <ng-template #emptyList>
+    <h2 style="color:white; height: 85vh; font-size: 3.6rem; padding-top: 10rem; padding-inline:2rem">Faça pesquisa da linguagem desejada e comece seus estudos!</h2>
+  </ng-template>
+
+

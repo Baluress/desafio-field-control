@@ -1,0 +1,17 @@
+.header {
+  background-color: #484F58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  min-width: 4rem;
+}
+
+.header__icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.header__search {
+  padding-block: 2rem;
+}

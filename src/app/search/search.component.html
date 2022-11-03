@@ -1,0 +1,12 @@
+<section class="search-container">
+  <div class="">
+    <form class="form" (ngSubmit)="getValue()">
+      <label for="search-input"></label>
+      <input class="form__input" type="text" id="search-input" placeholder="Digite uma linguagem" [(ngModel)]="value" name="search-input">
+
+      <div>
+        <button class="button" type="submit">Obter dados</button>
+      </div>
+    </form>
+  </div>
+</section>
