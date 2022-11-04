@@ -62,4 +62,3 @@ Navigate to `http://localhost:4200/`
 <p align="center">
   Made by Paulo Vicente with 💜
 </p>
-
