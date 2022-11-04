@@ -1,27 +1,69 @@
-# DesafioFieldControl
+<p align="center">
+  <a href="#-layout">Layout</a> •
+  <a href="#-technologies">Technologies</a> •
+  <a href="#-getting-started">Getting started</a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+## :framed_picture: Imagens
 
-## Development server
+<div align="center">
+    <img alt = "Telas da aplicação" src = "./assets/tela-inicial.png" width = "500px" />
+    <img alt = "Telas da aplicação" src = "./assets/tela-resultados.png" width = "500px" />
+    <img alt = "Telas da aplicação" src = "./assets/tela-resultados2.png" width = "500px" />
+    <img alt = "Telas da aplicação" src = "./assets/tela-paginacao.png" width = "500px" />
+    </div>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🔖 About this project
 
-## Code scaffolding
+The project was a challenge to develop an application in Angular, bringing an Api informations as a list and putting pagination to improve the user's navigation.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Technologies
 
-## Build
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Ngx-Pagination](http://michaelbromley.github.io/ngx-pagination/#/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 💻 Getting started
 
-## Running unit tests
+### Requirements
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/package/npm)
 
-## Running end-to-end tests
+**Access the submodule**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [desafio-field-control](https://github.com/Baluress/desafio-field-control.git)
 
-## Further help
+**Clone the project and access the folder**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/Baluress/desafio-field-control.git && cd desafio-field-control
+```
+
+**Follow the steps below**
+
+### Server
+
+```bash
+# From the project root folder access the 'server' folder
+$ cd desafio-field-control
+
+# Install the dependencies
+$ npm install
+
+# Start the server
+$ ng serve
+
+```
+
+### Navigate
+
+Navigate to `http://localhost:4200/`
+
+---
+
+<p align="center">
+  Made by Paulo Vicente with 💜
+</p>
+
