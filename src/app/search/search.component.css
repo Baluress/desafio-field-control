@@ -1,6 +1,3 @@
-.search-container {
-}
-
 .form {
   display: flex;
   align-items: center;
@@ -11,3 +8,25 @@
   color: white;
 }
 
+.button-search {
+  height: 3rem;
+  border:none;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  text-align: center;
+  background-color: #161B22;
+  color: white;
+  font-weight: bold;
+}
+
+.button-search.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+@media (max-width: 424px) {
+  .button-search {
+    width: 10rem;
+  }
+}

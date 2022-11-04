@@ -13,9 +13,13 @@ export class SearchComponent implements OnInit {
    }
 
   getValue() {
+    const buttonResult = document.querySelector('.button-results');
+    const buttonSearch = document.querySelector('.button-search')
     const value = this.value;
     this.InfoService.setValue(value)
     this.InfoService.getInfoApi();
+    buttonResult.classList.remove('hidden');
+    buttonSearch.classList.add('hidden');
   }
 
  ngOnInit(): void {

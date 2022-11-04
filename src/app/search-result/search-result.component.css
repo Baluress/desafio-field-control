@@ -1,12 +1,28 @@
-#button-results {
+.button-results {
   position: absolute;
-  top: 2rem;
-  right: 30%;
+  top: -5rem;
+  right: 16%;
+  height: 3rem;
+  border:none;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  text-align: center;
+  background-color: #161B22;
+  color: white;
+  font-weight: bold;
+}
+
+.button-results.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
+  max-width: 50rem;
+  margin: auto;
 }
 
 .list {
@@ -14,7 +30,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40rem;
 }
 
 .list-items {
@@ -72,8 +87,11 @@
   justify-content: center;
   font-size: 2rem;
   color: white;
-  width: 100%;
+  width: 100vw;
   color: white;
   background-color: #484F58;
 }
+
+
+
 

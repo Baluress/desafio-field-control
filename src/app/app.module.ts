@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { FormsModule } from '@angular/forms';
 
+
 registerLocaleData(localePt, 'pt');
 
 @NgModule({

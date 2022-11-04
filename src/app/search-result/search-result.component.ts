@@ -16,7 +16,11 @@ export class SearchResultComponent implements OnInit {
   }
 
     getListItems() {
+    const buttonResult = document.querySelector('.button-results');
+    const buttonSearch = document.querySelector('.button-search')
     this.listItems = this.InfoService.items;
+    buttonResult.classList.add('hidden');
+    buttonSearch.classList.remove('hidden');
     }
 
   ngOnInit(): void {

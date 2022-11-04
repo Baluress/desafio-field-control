@@ -1,6 +1,6 @@
 
   <div class="container">
-    <ul class="list" *ngIf="listItems?.length>0; else emptyList">
+    <ul #list class="list" *ngIf="listItems?.length>0; else emptyList">
       <li class="list-items" *ngFor="let item of listItems | paginate: { itemsPerPage: 10, currentPage: p }">
         <div class="repo-header">
           <img class="repo-header__icon" src="../../assets/images/icons8-repository-16.png" alt="Ícone de repositório">
@@ -15,15 +15,18 @@
           <span>{{item.updated_at | date: 'short'}}</span>
         </div>
       </li>
+      <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
   </ul>
+  <button class="button-results hidden" (click)="getListItems()">Mostrar</button>
 
-  <button class="button" id="button-results" (click)="getListItems()">Mostrar</button>
-</div>
 
-  <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
 
   <ng-template #emptyList>
-    <h2 style="color:white; height: 85vh; font-size: 3.6rem; padding-top: 10rem; padding-inline:2rem">Faça pesquisa da linguagem desejada e comece seus estudos!</h2>
+    <h2 style="color:white; font-size: 4rem; text-align: center; padding-top: 10rem; padding-inline:2rem">Faça pesquisa da linguagem desejada e comece seus estudos!</h2>
   </ng-template>
+
+</div>
+
+
 
 

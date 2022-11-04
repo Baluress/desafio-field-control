@@ -20,8 +20,7 @@ body {
   height: 100%;
 }
 
-.form__input,
-.button {
+.form__input{
   height: 3rem;
   border:none;
   border-radius: 0.8rem;

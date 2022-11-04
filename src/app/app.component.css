@@ -3,15 +3,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 4rem;
   min-width: 4rem;
 }
 
 .header__icon {
   width: 3.2rem;
   height: 3.2rem;
+  margin-left: 2.4rem;
 }
 
 .header__search {
   padding-block: 2rem;
+  margin-right: 2.4rem;
 }
+
+@media (max-width: 767px) {
+  .header {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .header {
+    gap: 0;
+  }
+}
+
+
+
