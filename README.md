@@ -31,10 +31,6 @@ The project was a challenge to develop an application in Angular, bringing an Ap
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/package/npm)
 
-**Access the submodule**
-
-- [desafio-field-control](https://github.com/Baluress/desafio-field-control.git)
-
 **Clone the project and access the folder**
 
 ```bash
